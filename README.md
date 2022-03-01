@@ -1,5 +1,28 @@
 # User Storage SPI Example
 
+## Keycloak Server SPI Getting Started
+
+### Add user federation provider
+
+Let’s add our first provider.
+
+1. Open the [Keycloak Admin Console](http://localhost:8180/auth/admin)
+
+2. Hover the mouse over the dropdown in the top-left corner where it says `Master`, then click on `Myrealm`
+
+3. Click `User Federation`
+
+4. Fill in the form with the following values:
+   - Add provider: `hashmap-user-store`
+
+![step_1](https://user-images.githubusercontent.com/15948693/156259407-3433abfd-f518-4d89-b298-627e9eb138d5.png)
+
+Done, now let's save the provider. To do this:
+
+1. Click `Save`
+
+![step_2](https://user-images.githubusercontent.com/15948693/156260402-2f9f2d2c-8e36-4518-9afb-f3de1eb8dbdf.png)
+
 ## Maven commands
 
 - `mvn clean`

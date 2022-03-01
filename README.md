@@ -59,7 +59,7 @@ Keycloak Server SPI
 </dependency>
 ```
 
-## Deploy .jar in Keycloak in Amazon Lightsail
+## Deploy .jar in Keycloak Amazon Lightsail server
 
 ```bash
 scp -i YourLightsailDefaultKey.pem "D:\workspace\user-storage-spi-example\target\user-storage-spi.jar" ubuntu@xxx.xxx.xxx.xxx:"/home/ubuntu/keycloak-myrealm/standalone/deployments/user-storage-spi.jar"

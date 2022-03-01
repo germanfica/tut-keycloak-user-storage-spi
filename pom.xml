@@ -7,11 +7,10 @@
 	<artifactId>user-storage-spi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-storage-spi</name>
-	<description>Demo project for Spring Boot</description>
+	<description>User storage SPI example project</description>
 	<properties>
-		<java.version>11</java.version>
+		<maven.compiler.release>11</maven.compiler.release>
 		<maven.compiler.version>3.10.0</maven.compiler.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<keycloak.version>17.0.0</keycloak.version>
 	</properties>
 
@@ -35,17 +34,14 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>${project.artifactId}</finalName>
-		<plugins>
-			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven.compiler.version}</version>
-				<configuration>
-					<release>${java.version}</release>
-				</configuration>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>

@@ -2,6 +2,12 @@
 
 ## Keycloak Server SPI Getting Started
 
+You can use the User Storage SPI to write extensions to Keycloak to connect to external user databases and credential stores. The built-in LDAP and ActiveDirectory support is an implementation of this SPI in action.
+
+If you want to know more, see below the official Keycloak documentation.
+
+- [User Storage SPI](https://www.keycloak.org/docs/latest/server_development/index.html#_user-storage-spi)
+
 ### Add user federation provider
 
 Let’s add our first provider.

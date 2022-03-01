@@ -1,5 +1,36 @@
 # User Storage SPI Example
 
+This repository provides a maven project to connect to external user in-memory database.
+
+| [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) |
+| --------------- | -------- |
+
+## Getting Started
+
+Follow the below instructions to get started with the source code:
+- [Make sure you have all Requirements](#requirements)
+- [Download Source Code](#download)
+- Open Project in your favourite Java IDE
+- [Build the app](#maven-commands)
+- [Deploy the .jar file](#deploy-app-in-keycloak-amazon-lightsail-server)
+- [Setup your Keycloak Server SPI](#keycloak-server-spi-getting-started)
+- And finally, enjoy it!
+
+## Requirements
+
+Make sure you have the below requirements before starting:
+- [OpenJDK 11 (LTS)](https://adoptium.net/?variant=openjdk11)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [Keycloak 16.1.0](https://www.keycloak.org/downloads)
+
+## Download
+You can get access to the source code by using one of the following ways:
+- :sparkles: Download Source Code
+- :fire: Clone the repository locally:
+```bash
+git clone https://github.com/germanfica/user-storage-spi-example.git
+```
+
 ## Keycloak Server SPI Getting Started
 
 You can use the User Storage SPI to write extensions to Keycloak to connect to external user databases and credential stores. The built-in LDAP and ActiveDirectory support is an implementation of this SPI in action.
@@ -78,7 +109,7 @@ Open `org.keycloak.storage.UserStorageProviderFactory`
 com.hexadefence.userstoragespi.HashMapStorageProviderFactory
 ```
 
-## Dependencies
+## Maven dependencies
 
 Apache Maven Compiler Plugin
 ```xml
@@ -101,7 +132,7 @@ Keycloak Server SPI
 </dependency>
 ```
 
-## Deploy .jar in Keycloak Amazon Lightsail server
+## Deploy app in Keycloak Amazon Lightsail server
 
 ```bash
 scp -i YourLightsailDefaultKey.pem "D:\workspace\user-storage-spi-example\target\user-storage-spi.jar" ubuntu@xxx.xxx.xxx.xxx:"/home/ubuntu/keycloak-myrealm/standalone/deployments/user-storage-spi.jar"

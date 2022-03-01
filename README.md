@@ -33,6 +33,32 @@ If you want you can add default roles.
 
 ![default-roles](https://user-images.githubusercontent.com/15948693/156261220-dbdbc575-50a6-46b8-9b99-d36109519557.png)
 
+## Install maven
+
+Follow the official maven guide below:
+
+- [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+
+pom.xml
+
+```xml
+ <properties>
+     <maven.compiler.release>11</maven.compiler.release>
+ </properties>
+
+ <build>
+     <pluginManagement>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-compiler-plugin</artifactId>
+                 <version>3.10.0</version>
+             </plugin>
+         </plugins>
+     </pluginManagement>
+ </build>
+```
+
 ## Maven commands
 
 - `mvn clean`

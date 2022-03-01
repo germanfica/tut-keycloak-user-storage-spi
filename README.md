@@ -23,6 +23,16 @@ Done, now let's save the provider. To do this:
 
 ![step_2](https://user-images.githubusercontent.com/15948693/156260402-2f9f2d2c-8e36-4518-9afb-f3de1eb8dbdf.png)
 
+That's it, we now have our user federation available.
+
+![user-federation](https://user-images.githubusercontent.com/15948693/156261450-aa07c395-139b-476c-b40e-1f51f7fc8d8b.png)
+
+### Add default roles to users
+
+If you want you can add default roles.
+
+![default-roles](https://user-images.githubusercontent.com/15948693/156261220-dbdbc575-50a6-46b8-9b99-d36109519557.png)
+
 ## Maven commands
 
 - `mvn clean`

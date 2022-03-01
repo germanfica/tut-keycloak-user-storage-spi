@@ -137,3 +137,7 @@ Keycloak Server SPI
 ```bash
 scp -i YourLightsailDefaultKey.pem "D:\workspace\user-storage-spi-example\target\user-storage-spi.jar" ubuntu@xxx.xxx.xxx.xxx:"/home/ubuntu/keycloak-myrealm/standalone/deployments/user-storage-spi.jar"
 ```
+
+## Credits
+- [German Fica](https://germanfica.com/)
+- [hexaDefence](https://www.youtube.com/channel/UCuVoQAkifLvxej36w357vEA)
